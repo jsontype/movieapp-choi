@@ -13,6 +13,10 @@
   color: black;
 }
 
+.movieTitle:hover {
+  background: gray;
+}
+
 .movieImage {
   border: 1px solid gray;
   border-radius: 5px;
