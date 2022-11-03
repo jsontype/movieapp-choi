@@ -5,6 +5,11 @@ export default function MovieList({ movies }) {
     const rankClass =
       item.rating >= 9 ? 'good' : item.rating >= 7 ? 'soso' : 'bad';
     const iconClass = item.rating >= 9 && '🔥';
+    if (item.rating === 0) {
+      item.rating = '평점없음';
+    }
+
+    // item.rating === 0 && ('평점없음');
     return (
       <div className="list" key={item.id}>
         <a className="movieTitle" href={item.url}>
