@@ -6,7 +6,7 @@ export default function MovieList({ movies }) {
       item.rating >= 9 ? 'good' : item.rating >= 7 ? 'soso' : 'bad';
     const iconClass = item.rating >= 9 && '🔥';
     return (
-      <div key={item.id}>
+      <div className="list" key={item.id}>
         <a className="movieTitle" href={item.url}>
           <span>{iconClass}</span> {item.title}
         </a>
