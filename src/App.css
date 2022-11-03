@@ -12,3 +12,23 @@
 .bad {
   color: red;
 }
+.movieTitle {
+  display: block;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  width: 200px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+.movieTitle:hover {
+  background: gray;
+}
+
+.movieImage {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 200px;
+}
