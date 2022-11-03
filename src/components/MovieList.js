@@ -9,13 +9,16 @@ export default function MovieList({ movies }) {
       item.rating = '평점없음';
     }
 
-    // item.rating === 0 && ('평점없음');
+    const movieGenre =
+      item.genres.length > 0 ? item.genres.join(', ') : '장르없음';
+    const itemRating = item.rating === 0 ? '평점없음' : item.rating;
     return (
       <div className="list" key={item.id}>
         <a className="movieTitle" href={item.url}>
           <span>{iconClass}</span> {item.title}
         </a>
-        <div className={rankClass}>평점 : {item.rating} / 10점</div>
+        <div className="genres">Genre: {movieGenre}</div>
+        <div className={rankClass}>평점 : {itemRating} / 10점</div>
         <img
           className="movieImage"
           src={item.large_cover_image}
