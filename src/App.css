@@ -1,7 +1,17 @@
 .App {
   margin: 20px;
 }
+.good {
+  color: blue;
+}
 
+.soso {
+  color: yellowgreen;
+}
+
+.bad {
+  color: red;
+}
 .movieTitle {
   display: block;
   border: 1px solid gray;
