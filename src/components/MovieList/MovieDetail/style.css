@@ -1,0 +1,15 @@
+.movieDetail {
+    margin-bottom: 15px;
+}
+
+.movieDetail .good {
+    color: blue;
+}
+
+.movieDetail .soso {
+    color: yellowgreen;
+}
+
+.movieDetail .bad {
+    color: red;
+}
