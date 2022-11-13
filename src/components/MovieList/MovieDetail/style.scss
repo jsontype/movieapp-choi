@@ -1,0 +1,17 @@
+@import '/src/style/resources.scss';
+.movieDetail {
+  margin-bottom: 15px;
+  font-size: $font-md;
+}
+
+.movieDetail .good {
+  color: $blue;
+}
+
+.movieDetail .soso {
+  color: $yellowgreen;
+}
+
+.movieDetail .bad {
+  color: $red;
+}
