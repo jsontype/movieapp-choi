@@ -1,0 +1,26 @@
+@import '/src/style/resources.scss';
+.movieTitle {
+  display: block;
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 500px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: $black;
+  font-size: $font-lg;
+  text-align: center;
+}
+
+.movieTitle:hover {
+  background: gray;
+}
+
+.movieImage {
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 500px;
+}
+
+.list {
+  margin-bottom: 10px;
+}

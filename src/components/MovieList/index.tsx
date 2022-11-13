@@ -1,32 +1,34 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import MovieDetail from './MovieDetail';
-import './style.css'
+import './style.scss';
 
 type MovieProps = {
-  rating: number | string,
-  genres: string[]
-  id: number,
-  url: string,
-  title: string,
-  large_cover_image: string,
-}
+  rating: number | string;
+  genres: string[];
+  id: number;
+  url: string;
+  title: string;
+  large_cover_image: string;
+};
 
 type MovieListProps = {
-  movies: MovieProps[]
-}
+  movies: MovieProps[];
+};
 
 export default function MovieList({ movies }: MovieListProps) {
   // TODO:
-  console.log(movies)
-  const [isDetail, setIsDetail] = useState<boolean>(false)
-  const [id, setId] = useState<number>(0)
+  console.log(movies);
+  const [isDetail, setIsDetail] = useState<boolean>(false);
+  const [id, setId] = useState<number>(0);
 
   const render = movies.map(item => {
     const onClick = () => {
-      isDetail === true && id !== item.id ? setIsDetail(true) : setIsDetail(!isDetail)
-      setId(item.id)
-    }
-    
+      isDetail === true && id !== item.id
+        ? setIsDetail(true)
+        : setIsDetail(!isDetail);
+      setId(item.id);
+    };
+
     return (
       <div className="list" key={item.id}>
         <div className="movieTitle" onClick={onClick}>
