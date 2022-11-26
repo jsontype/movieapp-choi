@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import MovieDetail from './MovieDetail';
-import './style.scss';
+import styles from './style.module.scss';
 
 type MovieProps = {
   rating: number | string;
@@ -30,15 +30,15 @@ export default function MovieList({ movies }: MovieListProps) {
     };
 
     return (
-      <div className="list" key={item.id}>
-        <div className="movieTitle" onClick={onClick}>
+      <div className={styles.list} key={item.id}>
+        <div className={styles.movieTitle} onClick={onClick}>
           {item.title}
         </div>
 
         {isDetail && id === item.id && <MovieDetail item={item} />}
 
         <img
-          className="movieImage"
+          className={styles.movieImage}
           src={item.large_cover_image}
           alt={item.title}
         ></img>

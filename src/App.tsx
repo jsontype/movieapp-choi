@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import MovieList from './components/MovieList';
 import Title from './components/Title';
-import './App.css';
+import styles from './App.module.scss';
 import React from 'react';
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
 
   // XML
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Title />
       <MovieList movies={movies} />
     </div>
