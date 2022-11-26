@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss';
+import styles from './style.module.scss';
 
 export default function MovieDetail({ item }: any) {
   const rankClass =
@@ -10,7 +10,7 @@ export default function MovieDetail({ item }: any) {
   const itemRating = item.rating || '평점없음';
 
   return (
-    <div className="movieDetail">
+    <div className={styles.movieDetail}>
       <div>영화제목 : {item.title}</div>
       <div>
         평점 : <span className={rankClass}>{itemRating}</span> / 10점{' '}
